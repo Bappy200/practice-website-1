@@ -221,7 +221,6 @@ body {
 }
 .text_box {
   width: 350px;
-  height: 200px;
   padding: 25px;
   box-shadow: 0px 1px 7px 0px #ddd;
   margin-bottom: 25px;
@@ -533,6 +532,10 @@ body {
 }
 /* MEDIA START */
 @media only screen and (max-width: 960px) {
+  /*GLOBAL CLASS*/
+  .container {
+    padding: 25px 50px;
+  }
   .header_container {
     padding: 0px 50px;
   }
@@ -559,7 +562,7 @@ body {
     right: 50px;
     top: 70px;
     z-index: 999;
-    background: #9371e4;
+    background: #ffd8be;
     flex-direction: column;
     justify-content: start;
     border-radius: 0px 0px 5px 5px;
@@ -578,4 +581,66 @@ body {
     text-align: center;
     padding: 15px 0px;
   }
+
+  /* ANNOUNCEMENTS SECTION START */
+  .left-area,
+  .right-area {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .item {
+    width: 45%;
+  }
+
+  /* EXPRENCE SECTION START */
+  .text_box,
+  .article_box {
+    width: 48%;
+  }
+  .contunt_container {
+    flex-direction: column;
+  }
+  .address_area,
+  .input_form {
+    width: 100%;
+  }
+  .address_area {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .input_form {
+    border-radius: 0px 0px 10px 10px;
+  }
 }
+
+@media only screen and (max-width: 640px) {
+  .text_box,
+  .article_box,
+  .item,
+  .check_boxs,
+  .f_links_area,
+  .footer_location {
+    width: 100%;
+  }
+
+  .input_fild {
+    width: 100%;
+  }
+  .check_boxs {
+    flex-direction: column;
+  }
+  .title_image {
+    width: 125px;
+  }
+  .footer_location {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .f_links_area {
+    flex-direction: column;
+    text-align: center;
+  }
+  .link_area {
+    margin-bottom: 30px;
+  }
+}
+ 
